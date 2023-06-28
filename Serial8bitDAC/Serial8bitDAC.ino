@@ -54,7 +54,7 @@ void setup() {
 }
 
 void loop() {
-  for (float Num = 24; Num > 0; Num--)
+  for (float Num = 240; Num > 0; Num--)
           {
              //lento
              digitalWrite(latchPin, LOW) ; // Latch a LOW para que no varíe la salida
@@ -63,12 +63,12 @@ void loop() {
 
 
 
-             /*Sine function
+             ///*Sine function
              float sine=sin(Num*PI/120);
              //Serial.println((sine*100)+100);
              //Serial.println(sin(Num)*100);
              shiftOut(dataPin, clockPin, MSBFIRST, (sine*100)+100);
-             */
+             //*/
 
 
 
@@ -80,11 +80,11 @@ void loop() {
              */
 
         
-             ///*Antilog function
+             /*Antilog function
              float convertToFloatNum=Num/10;         Serial.println(convertToFloatNum);
              float antilog=pow(10,convertToFloatNum);//Serial.println(antilog);
              shiftOut(dataPin, clockPin, MSBFIRST, antilog);
-             //*/
+             */
 
 
              
